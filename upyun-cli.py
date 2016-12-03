@@ -236,7 +236,7 @@ def get(src, dst, show_progress):
 @cli.command()
 def web():
     """打开本脚本的 github 主页"""
-    url = "https://github.com/feelinglucky/upyun-cli"
+    url = "https://github.com/feelinglucky/upyun-cli.py"
     import webbrowser
     webbrowser.open(url)
 
