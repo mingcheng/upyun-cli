@@ -1,0 +1,11 @@
+bucket:
+    name: <bucket-name>
+    user: <operator>
+    password: <password>
+
+url:
+    host: <bucket-host>
+
+network:
+    timeout: 300
+
