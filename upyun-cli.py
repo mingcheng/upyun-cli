@@ -20,7 +20,8 @@ Upyun = None
 
 colorama.init()
 
-show_title = lambda title: click.echo(
+
+def show_title(title): click.echo(
     (Back.LIGHTBLUE_EX + Fore.LIGHTWHITE_EX + "%s" + Fore.RESET + Back.RESET) % str.strip(title))
 
 
@@ -107,7 +108,7 @@ def put(src, dst, show_progress):
     """上传文件到远程 Bucket，同时返回 URL 地址"""
     # 去除重复 @see https://www.cnblogs.com/infim/archive/2011/03/10/1979615.html
     src = list(set(src))
-    progress = ProgressBarHandler if show_progress == True else None
+    progress = ProgressBarHandler if show_progress is True else None
     if len(src) is 0:
         show_error("必须指定需要上传的文件以及远程路径")
         return
@@ -212,7 +213,7 @@ def purge(path):
 @click.option("--show-progress/--no-progress", default=True, help="显示（隐藏）下载进度条")
 def get(src, dst, show_progress):
     """从远程获取文件到本地"""
-    progress = ProgressBarHandler if show_progress == True else None
+    progress = ProgressBarHandler if show_progress is True else None
     for remote_path in src:
         try:
             res = Upyun.getinfo(remote_path)
