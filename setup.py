@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='upyun-cli',
-    version='0.1',
+    version='0.31',
     description='UpYun Command Line Tools',
     packages=find_packages(),
     license='License :: OSI Approved :: MIT License',
