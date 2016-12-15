@@ -1,7 +1,8 @@
 基于又拍云 Python SDK 的命令行工具
 ##################################
 
-.. image:: https://badge.fury.io/py/upyun-cli.png
+..
+ .. image:: https://badge.fury.io/py/upyun-cli.png
     :target: https://badge.fury.io/py/upyun-cli
     :height: 20px
 .. image:: https://travis-ci.org/feelinglucky/upyun-cli.py.svg?branch=master
@@ -132,5 +133,6 @@ A: 不好意思，一直用 Python3 了
 更新日志
 ########
 
+``2016-12-15`` 增加持续集成服务
 ``2016-12-03`` 发布第一个公开版本
 
