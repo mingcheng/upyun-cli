@@ -1,7 +1,7 @@
 基于又拍云 Python SDK 的命令行工具
 ##################################
 
-.. image:: https://badge.fury.io/py/upyun-cli@2x.png
+.. image:: https://badge.fury.io/py/upyun-cli.png
     :target: https://badge.fury.io/py/upyun-cli
     :height: 20px
 .. image:: https://travis-ci.org/feelinglucky/upyun-cli.py.svg?branch=master
