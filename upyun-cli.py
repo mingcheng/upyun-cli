@@ -75,7 +75,7 @@ def cli(config_file):
                       timeout=network['timeout'],
                       endpoint=upyun.ED_AUTO)
     except FileNotFoundError as error:
-        show_error("The file %s is not found." % config_file)
+        show_error("The file %s is not found." % str(error))
         sys.exit(error.errno)
     except Exception as error:
         show_error("Some bad things is happened.")
@@ -93,7 +93,7 @@ def load_config(file=None):
         file = default_config_file
 
     if not os.path.exists(file):
-        raise FileNotFoundError("Error The config file %s is not exists." % file)
+        raise FileNotFoundError(file)
 
     configure_file = file
     try:
