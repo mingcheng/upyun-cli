@@ -1,10 +1,9 @@
 基于又拍云 Python SDK 的命令行工具
 ##################################
 
-.. image:: https://travis-ci.org/feelinglucky/upyun-cli.py.svg?branch=master
-    :target: https://travis-ci.org/feelinglucky/upyun-cli.py
-    :height: 20px
-
+.. image:: https://travis-ci.org/mingcheng/upyun-cli.py.svg?branch=master
+    :target: https://travis-ci.org/mingcheng/upyun-cli.py
+    
 特性
 ####
 
